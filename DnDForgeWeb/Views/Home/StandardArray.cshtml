@@ -1,0 +1,95 @@
+﻿@model StandardArrayViewModel
+@{
+    ViewData["Title"] = "StandardArray";
+}
+
+<section>
+    <h1>Standard Array</h1>
+    <form method="post">
+        <h2>Assign the following: 15, 14, 13, 12, 10, 8</h2>
+        <p>(Only one value can be assigned per Ability Score.)</p>
+        <label asp-for="Strength">STR:</label>
+        <br />
+        <select asp-for="Strength">
+            <option value="none" hidden>--</option>
+            <option value="15">15</option>
+            <option value="14">14</option>
+            <option value="13">13</option>
+            <option value="12">12</option>
+            <option value="10">10</option>
+            <option value="8">8</option>
+        </select>
+        <br />
+        <label asp-for="Dexterity">DEX:</label>
+        <br />
+        <select asp-for="Dexterity">
+            <option value="none" hidden>--</option>
+            <option value="15">15</option>
+            <option value="14">14</option>
+            <option value="13">13</option>
+            <option value="12">12</option>
+            <option value="10">10</option>
+            <option value="8">8</option>
+        </select>
+        <br />
+        <label asp-for="Constitution">CON:</label>
+        <br />
+        <select asp-for="Constitution">
+            <option value="none" hidden>--</option>
+            <option value="15">15</option>
+            <option value="14">14</option>
+            <option value="13">13</option>
+            <option value="12">12</option>
+            <option value="10">10</option>
+            <option value="8">8</option>
+        </select>
+        <br />
+        <label asp-for="Intelligence">INT:</label>
+        <br />
+        <select asp-for="Intelligence">
+            <option value="none" hidden>--</option>
+            <option value="15">15</option>
+            <option value="14">14</option>
+            <option value="13">13</option>
+            <option value="12">12</option>
+            <option value="10">10</option>
+            <option value="8">8</option>
+        </select>
+        <br />
+        <label asp-for="Wisdom">WIS:</label>
+        <br />
+        <select asp-for="Wisdom">
+            <option value="none" hidden>--</option>
+            <option value="15">15</option>
+            <option value="14">14</option>
+            <option value="13">13</option>
+            <option value="12">12</option>
+            <option value="10">10</option>
+            <option value="8">8</option>
+        </select>
+        <br />
+        <label asp-for="Charisma">CHA:</label>
+        <br />
+        <select asp-for="Charisma">
+            <option value="none" hidden>--</option>
+            <option value="15">15</option>
+            <option value="14">14</option>
+            <option value="13">13</option>
+            <option value="12">12</option>
+            <option value="10">10</option>
+            <option value="8">8</option>
+        </select>
+        <br />
+        <input type="submit" value="Next" />
+    </form>
+    <br />
+    <a href="http://localhost:5022/Home/BasicData">Basic Data</a>
+    <br />
+    <a href="http://localhost:5022/Home/AbilityScores">Ability Scores</a>
+    <br />
+    <a href="http://localhost:5022/Home/PointBuy">Point Buy</a>
+    <br />
+    <a href="http://localhost:5022/Home/RollDice">Roll Dice</a>
+    <br />
+    <a href="http://localhost:5022/Home/Custom">Custom</a>
+</section>

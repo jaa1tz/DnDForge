@@ -1,0 +1,37 @@
+﻿@model AbilityScoresViewModel
+@{
+    ViewData["Title"] = "AbilityScores";
+}
+    
+    <section>
+    <h1>Ability Scores</h1>
+    <form method="post">
+        <label asp-for="PointBuy">Point Buy:</label>
+        <br />
+        <input asp-for="PointBuy" type="button" />
+        <br />
+        <label asp-for="StandardArray">Standard Array:</label>
+        <br />
+        <input asp-for="StandardArray" type="button" />
+        <br />
+        <label asp-for="RollDice">Roll Dice:</label>
+        <br />
+        <input asp-for="RollDice" type="button" />
+        <br />
+        <label asp-for="Custom">Custom:</label>
+        <br />
+        <input asp-for="Custom" type="button" />
+        <br />
+        <input type="submit" value="Next" />
+    </form>
+    <br />
+    <a href="http://localhost:5022/Home/BasicData">Basic Data</a>
+    <br />
+    <a href="http://localhost:5022/Home/StandardArray">Standard Array</a>
+    <br />
+    <a href="http://localhost:5022/Home/PointBuy">Point Buy</a>
+    <br />
+    <a href="http://localhost:5022/Home/RollDice">Roll Dice</a>
+    <br />
+    <a href="http://localhost:5022/Home/Custom">Custom</a>
+</section>

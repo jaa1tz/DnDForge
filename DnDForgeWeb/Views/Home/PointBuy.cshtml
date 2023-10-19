@@ -1,0 +1,48 @@
+﻿@model PointBuyViewModel
+@{
+    ViewData["Title"] = "PointBuy";
+}
+
+<section>
+    <h1>Point Buy</h1>
+    <p>Assign 27 points to the below Ability Scores. 
+        <br />You may subtract points to make an Ability Score go below 8 to add points elsewhere.
+        <br />Individual Ability Scores cannot be less than 6 or exceed 15.</p>
+    <form method="post">
+        <label asp-for="Strength">STR:</label>
+        <br />
+        <input type="number" value="8" min="6" max="15" maxlength="2"/>
+        <br />
+        <label asp-for="Dexterity">DEX:</label>
+        <br />
+        <input type="number" value="8" min="6" max="15" maxlength="2"/>
+        <br />
+        <label asp-for="Constitution">CON:</label>
+        <br />
+        <input type="number" value="8" min="6" max="15" maxlength="2"/>
+        <br />
+         <label asp-for="Intelligence">INT:</label>
+        <br />
+        <input type="number" value="8" min="6" max="15" maxlength="2"/>
+        <br />
+        <label asp-for="Wisdom">WIS:</label>
+        <br />
+        <input type="number" value="8" min="6" max="15" maxlength="2"/>
+        <br />
+        <label asp-for="Charisma">CHA:</label>
+        <br />
+        <input type="number" value="8" min="6" max="15" maxlength="2"/>
+        <br />
+        <input type="submit" value="Next" />
+    </form>
+    <br />
+    <a href="http://localhost:5022/Home/BasicData">Basic Data</a>
+    <br />
+    <a href="http://localhost:5022/Home/AbilityScores">Ability Scores</a>
+    <br />
+    <a href="http://localhost:5022/Home/StandardArray">Standard Array</a>
+    <br />
+    <a href="http://localhost:5022/Home/RollDice">Roll Dice</a>
+    <br />
+    <a href="http://localhost:5022/Home/Custom">Custom</a>
+</section>

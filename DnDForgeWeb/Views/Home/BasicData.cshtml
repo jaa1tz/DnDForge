@@ -1,0 +1,128 @@
+﻿@model BasicDataViewModel
+@{
+    ViewData["Title"] = "BasicData";
+}
+
+<section>
+    <h1>Basic Data</h1>
+    <form method="post">
+        <label asp-for="CharacterName">Name:</label>
+        <br />
+        <input asp-for="CharacterName" type="text" required minlength="3" maxlength="30" />
+        <br />
+        <label asp-for="Class">Class:</label>
+        <br />
+        <select asp-for="Class">
+            <option value="Artificer">Artificer</option>
+            <option value="Barbarian">Barbarian</option>
+            <option value="Bard">Bard</option>
+            <option value="Cleric">Cleric</option>
+            <option value="Druid">Druid</option>
+            <option value="Fighter">Fighter</option>
+            <option value="Monk">Monk</option>
+            <option value="Paladin">Paladin</option>
+            <option value="Ranger">Ranger</option>
+            <option value="Rogue">Rogue</option>
+            <option value="Sorcerer">Sorcerer</option>
+            <option value="Warlock">Warlock</option>
+            <option value="Wizard">Wizard</option>
+        </select>
+        <br />
+        <label asp-for="Race">Race:</label>/>
+        <br />
+        <select asp-for="Race">
+            <optgroup label="PHB Races">
+                <option value="Dragonborn">Dragonborn</option>
+                <option value="Dwarf">Dwarf</option>
+                <option value="Elf">Elf</option>
+                <option value="Gnome">Gnome</option>
+                <option value="HalfElf">Half-Elf</option>
+                <option value="Halfling">Halfling</option>
+                <option value="Human">Human</option>
+                <option value="Tiefling">Tiefling</option>
+            </optgroup>
+            <optgroup label="Motm Races">
+                <option value="Aarakocra">Aarakocra</option>
+                <option value="Aasimar">Aasimar</option>
+                <option value="AirGenasi">Air Genasi</option>
+                <option value="Bugbear">Bugbear</option>
+                <option value="Centaur">Centaur</option>
+                <option value="Changeling">Changeling</option>
+                <option value="DeepGnome">Deep Gnome</option>
+                <option value="Duergar">Duergar</option>
+                <option value="EarthGenasi">Earth Genasi</option>
+                <option value="Eladrin">Eladrin</option>
+                <option value="Fairy">Fairy</option>
+                <option value="Firbolg">Firbolg</option>
+                <option value="FireGenasi">Fire Genasi</option>
+                <option value="Githyanki">Githyanki</option>
+                <option value="Githzerai">Githzerai</option>
+                <option value="Goblin">Goblin</option>
+                <option value="Goliath">Goliath</option>
+                <option value="Harengon">Harengon</option>
+                <option value="Hobgoblin">Hobgoblin</option>
+                <option value="Kenku">Kenku</option>
+                <option value="Kobold">Kobold</option>
+                <option value="Lizardfold">Lizardfolk</option>
+                <option value="Minotaur">Minotaur</option>
+                <option value="Orc">Orc</option>
+                <option value="Satyr">Satyr</option>
+                <option value="SeaElf">Sea Elf</option>
+                <option value="Shadar-kai">Shadar-kai</option>
+                <option value="Shifter">Shifter</option>
+                <option value="Tabaxi">Tabaxi</option>
+                <option value="Tortle">Tortle</option>
+                <option value="Triton">Triton</option>
+                <option value="WaterGenasi">Water Gensai</option>
+                <option value="Yuan-ti">Yuan-ti</option>
+            </optgroup>
+            <optgroup label="SotDQ Races">
+                <option value="Kender">Kender</option>
+            </optgroup>
+            <optgroup label="SAiS Races">
+                <option value="AstralElf">Astral Elf</option>
+                <option value="Autognome">Autognome</option>
+                <option value="Giff">Giff</option>
+                <option value="Hadozee">Hadozee</option>
+                <option value="Plasmoid">Plasmoid</option>
+                <option value="Thri-kreen">Thri-kreen</option>
+            </optgroup>
+            <optgroup label="SACoC Races">
+                <option value="Owlin">Owlin</option>
+            </optgroup>
+            <optgroup label="MOoT">
+                <option value="Leonin">Leonin</option>
+            </optgroup>
+            <optgroup label="ERftLW Races">
+                <option value="Kalashtar">Kalashtar</option>
+                <option value="Warforged">Warforged</option>
+            </optgroup>
+            <optgroup label="GGtR Races">
+                <option value="Loxodon">Loxodon</option>
+                <option value="SimicHybrid">Simic Hybrid</option>
+                <option value="Vedalken">Vedalken</option>
+            </optgroup>
+            <optgroup label="SCAG Races">
+                <option value="FeralTiefling">Feral Tiefling</option>
+            </optgroup>
+            <optgroup label="LR Races">
+                <option value="Locathah">Locathah</option>
+            </optgroup>
+            <optgroup label="OGA Races">
+                <option value="Grung">Grung</option>
+            </optgroup>
+        </select>
+        <br/>
+        <input type="submit" value="Next" />
+    </form>
+    <br />
+    <a href="http://localhost:5022/Home/AbilityScores">Ability Scores</a>
+    <br />
+    <a href="http://localhost:5022/Home/StandardArray">Standard Array</a>
+    <br />
+    <a href="http://localhost:5022/Home/PointBuy">Point Buy</a>
+    <br />
+    <a href="http://localhost:5022/Home/RollDice">Roll Dice</a>
+    <br />
+    <a href="http://localhost:5022/Home/Custom">Custom</a>
+</section>

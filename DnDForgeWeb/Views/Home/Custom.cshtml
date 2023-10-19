@@ -1,0 +1,45 @@
+﻿@model CustomViewModel
+@{
+    ViewData["Title"] = "Custom";
+}
+
+<section>
+    <h1>Custom Ability Scores</h1>
+    <form method="post">
+        <label asp-for="Strength">STR:</label>
+        <br />
+        <input type="number" min="6" max="20" />
+        <br />
+        <label asp-for="Dexterity">DEX:</label>
+        <br />
+        <input type="number" min="6" max="20" />
+        <br />
+        <label asp-for="Constitution">CON:</label>
+        <br />
+        <input type="number" min="6" max="20" />
+        <br />
+        <label asp-for="Intelligence">INT:</label>
+        <br />
+        <input type="number" min="6" max="20" />
+        <br />
+        <label asp-for="Wisdom">WIS:</label>
+        <br />
+        <input type="number" min="6" max="20" />
+        <br />
+        <label asp-for="Charisma">CHA:</label>
+        <br />
+        <input type="number" min="6" max="20" />
+        <br />
+        <input type="submit" value="Next" />
+    </form>
+    <br />
+    <a href="http://localhost:5022/Home/BasicData">Basic Data</a>
+    <br />
+    <a href="http://localhost:5022/Home/AbilityScores">Ability Scores</a>
+    <br />
+    <a href="http://localhost:5022/Home/StandardArray">Standard Array</a>
+    <br />
+    <a href="http://localhost:5022/Home/PointBuy">Point Buy</a>
+    <br />
+    <a href="http://localhost:5022/Home/RollDice">Roll Dice</a>
+</section>

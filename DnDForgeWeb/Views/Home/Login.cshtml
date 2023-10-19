@@ -1,10 +1,10 @@
 ﻿@model LoginViewModel
 @{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Log In";
 }
 
 <section>
-    <h1>Sign In</h1>
+    <h1>Log In</h1>
     <form method="post">
         <label asp-for="UserName">Username:</label>
         <br />
@@ -12,8 +12,23 @@
         <br />
         <label asp-for="Password">Password:</label>
         <br />
-        <input asp-for="Password" type="password" required minlength="8" maxlength="25" />
+        <input asp-for="Password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,25}" title="Must contain at least one number, one uppercase and lowercase letter, and be between 8 and 25 characters long." required />
         <br />
         <input type="submit" value="Login" />
     </form>
+    <label asp-for="Register">New Users:</label>
+    <br />
+    <a href="http://localhost:5022/Home/Register">Create Account</a>
+    <br/>
+    <a href="http://localhost:5022/Home/BasicData">Basic Data</a>
+    <br />
+    <a href="http://localhost:5022/Home/AbilityScores">Ability Scores</a>
+    <br />
+    <a href="http://localhost:5022/Home/StandardArray">Standard Array</a>
+    <br />
+    <a href="http://localhost:5022/Home/PointBuy">Point Buy</a>
+    <br />
+    <a href="http://localhost:5022/Home/RollDice">Roll Dice</a>
+    <br />
+    <a href="http://localhost:5022/Home/Custom">Custom</a>
 </section>

@@ -1,0 +1,46 @@
+﻿@model RollDiceViewModel
+@{
+    ViewData["Title"] = "RollDice";
+}
+
+<section>
+    <h1>Roll Dice</h1>
+    <p>Roll Dice for the following Ability Scores.</p>
+    <form>
+        <label asp-for="Strength">STR:</label>
+        <br />
+        <input asp-for="Strength" type="button" value="Roll Dice" />
+        <br />
+        <label asp-for="Dexterity">DEX:</label>
+        <br />
+        <input asp-for="Dexterity" type="button" value="Roll Dice" />
+        <br />
+        <label asp-for="Constitution">CON:</label>
+        <br />
+        <input asp-for="Constitution" type="button" value="Roll Dice" />
+        <br />
+        <label asp-for="Intelligence">INT:</label>
+        <br />
+        <input asp-for="Intelligence" type="button" value="Roll Dice" />
+        <br />
+        <label asp-for="Wisdom">WIS:</label>
+        <br />
+        <input asp-for="Wisdom" type="button" value="Roll Dice" />
+        <br />
+        <label asp-for="Charisma">CHA:</label>
+        <br />
+        <input asp-for="Charisma" type="button" value="Roll Dice" />
+        <br />
+        <input type="submit" value="Next" />
+    </form>
+    <br />
+    <a href="http://localhost:5022/Home/BasicData">Basic Data</a>
+    <br />
+    <a href="http://localhost:5022/Home/AbilityScores">Ability Scores</a>
+    <br />
+    <a href="http://localhost:5022/Home/StandardArray">Standard Array</a>
+    <br />
+    <a href="http://localhost:5022/Home/PointBuy">Point Buy</a>
+    <br />
+    <a href="http://localhost:5022/Home/Custom">Custom</a>
+</section>

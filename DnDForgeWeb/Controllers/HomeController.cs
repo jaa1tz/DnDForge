@@ -30,14 +30,44 @@ namespace DnDForgeWeb.Controllers
             return View("Login");
         }
 
-        public IActionResult Register()
+        public IActionResult Register(RegisterViewModel vm)
         {
-            return View();
+            return View("Register");
         }
 
-        public IActionResult CreateCharacter()
+        public IActionResult CreateCharacter(CreateCharacterViewModel vm)
         {
-            return View();
+            return View("CreateCharacter");
+        }
+
+        public IActionResult BasicData(BasicDataViewModel vm)
+        {
+            return View("BasicData");
+        }
+
+        public IActionResult AbilityScores(AbilityScoresViewModel vm)
+        {
+            return View("AbilityScores");
+        }
+
+        public IActionResult StandardArray(StandardArrayViewModel vm) 
+        {
+            return View("StandardArray");
+        }
+
+        public IActionResult PointBuy(PointBuyViewModel vm) 
+        {
+            return View("PointBuy");
+        }
+
+        public IActionResult RollDice(RollDiceViewModel vm) 
+        {
+            return View("RollDice");
+        }
+
+        public IActionResult Custom(CustomViewModel vm) 
+        {
+            return View("Custom");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
