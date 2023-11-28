@@ -8,6 +8,10 @@
     <form method="post">
         <h2>Assign the following: 15, 14, 13, 12, 10, 8</h2>
         <p>(Only one value can be assigned per Ability Score.)</p>
+        @if (Model.ErrorMessage != null)
+        {
+            <h3 style="color: red;">@Model.ErrorMessage</h3>
+        }
         <label asp-for="Strength">STR:</label>
         <br />
         <select asp-for="Strength">

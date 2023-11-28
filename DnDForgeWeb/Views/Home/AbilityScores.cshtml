@@ -8,24 +8,23 @@
     <form method="post">
         <label asp-for="PointBuy">Point Buy:</label>
         <br />
-        <input asp-for="PointBuy" type="button" />
+        <a asp-action="PointBuy" class="btn btn-primary">Point Buy</a>
         <br />
         <label asp-for="StandardArray">Standard Array:</label>
         <br />
-        <input asp-for="StandardArray" type="button" />
+        <a asp-action="StandardArray" class="btn btn-primary">Standard Array</a>
         <br />
         <label asp-for="RollDice">Roll Dice:</label>
         <br />
-        <input asp-for="RollDice" type="button" />
+        <a asp-action="RollDice" class="btn btn-primary">Roll Dice</a>
         <br />
         <label asp-for="Custom">Custom:</label>
         <br />
-        <input asp-for="Custom" type="button" />
+        <a asp-action="Custom" class="btn btn-primary">Custom</a>
         <br />
-        <input type="submit" value="Next" />
     </form>
     <br />
-    <a href="http://localhost:5022/Home/BasicData">Basic Data</a>
+    <a asp-action="BasicData">Basic Data</a>
     <br />
     <a href="http://localhost:5022/Home/StandardArray">Standard Array</a>
     <br />
